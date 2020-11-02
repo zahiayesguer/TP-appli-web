@@ -1,0 +1,15 @@
+
+#error{
+    background-color: rgb(255, 90, 100);
+    padding: 5px;
+    border: 1px black;
+}
+#resultat{
+    background-color: rgb(0, 200, 0);
+    padding: 5px;
+    border: 1px black;
+	color : rgb(255, 200, 255);
+}
+#boutton{
+    background-color: rgb(130, 100, 254);
+}
