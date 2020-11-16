@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TP3 Formulaire</title>
+   
+    <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+    <!-- CSS boostrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="form-jquery-validation.js"></script>   
+    <style>
+        .container{
+        margin-bottom: 5% ;
+        margin-left: 5% ;
+        margin-right: 5% ;
+        margin-top: 5% ;
+        }
+        h1{
+        text-align: center;
+        text-decoration: underline;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    
+<!-- -->
+    <h1> TP 3 : Formulaire </h1>
+    <div class="container">
+            <!-- -->
+        <form method="POST" action="" id="formulaire">
+
+            <div class="form-group row">
+                <label for="Nom" class="col-sm-2 col-form-label">Nom : </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nom" placeholder="Insérer votre nom">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="Prenom" class="col-sm-2 col-form-label">Prénom : </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Prenom" placeholder="Insérer votre prénom">
+                </div>
+            </div>
+           
+            <div class="form-group row">
+                <label for="datedenaissance" class="col-sm-2 col-form-label">Date de naissance : </label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="datedenaissance" placeholder="JJ/MM/AAAA">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="Adresse" class="col-sm-2 col-form-label">Adresse : </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Adresse" placeholder="Insérer votre Adresse">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label">Email : </label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+             </div>
+
+
+
+            <button type="submit" class="btn btn-primary" id="envoyer">
+                Valider
+            </button>
+
+
+        </form>
+        
+        <!-- -->
+
+        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Bonjour </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                      <p>Veuillez remplir tous ces champs SVP ! </p>
+
+                       <div id="googleMap" style="width:100%;height:400px;">
+                        <div id="error"></div>
+                       </div>
+
+                    </div>
+
+                    <div class="modal-footer"> 
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -->
+    </div>
+
+
+    
+
+</body>
+
+</html>
